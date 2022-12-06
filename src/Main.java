@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) throws Exception {
-        String[] inputArray = Input.read();
+        char[] inputArray = Input.read();
         int[] numbers = Number.parse(inputArray);
         int num1 = numbers[0];
         int num2 = numbers[1];
-
         int result = 0;
-        switch (inputArray[1]) {
+
+        switch (String.valueOf(inputArray[1])) {
             case "+" -> result = num1 + num2;
             case "-" -> result = num1 - num2;
             case "*" -> result = num1 * num2;

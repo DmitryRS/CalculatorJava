@@ -10,9 +10,9 @@ public class Number {
             "LXXXI", "LXXXII", "LXXXIII", "LXXXIV", "LXXXV", "LXXXVI", "LXXXVII", "LXXXVIII", "LXXXIX", "XC",
             "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX", "C"));
 
-    public static int[] parse(String[] inputArray) throws Exception {
-        String str1 = inputArray[0];
-        String str2 = inputArray[2];
+    public static int[] parse(char[] inputArray) throws Exception {
+        String str1 = String.valueOf(inputArray[0]);
+        String str2 = String.valueOf(inputArray[2]);
         int num1, num2 = 0;
         if(romanNumber.indexOf(str1) > 0) {
             isRoman = true;
